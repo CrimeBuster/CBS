@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.crimebusters.HighPriorityReport$PlaceholderFragment" >
+
+     <EditText
+         android:id="@+id/location_desc"
+         android:textStyle="bold"
+         android:textSize="24sp"
+         android:layout_marginBottom="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/location_desc" />
+     
+     <EditText
+         android:id="@+id/crime_desc"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textStyle="bold"
+         android:layout_marginBottom="10dp"
+         android:textSize="24sp"
+         android:hint="@string/crime_desc" />
+     
+     <EditText
+         android:id="@+id/locationX"
+         android:layout_width="match_parent"
+         android:textStyle="bold"
+         android:textSize="24sp"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:hint="@string/locationX" />
+
+     <EditText
+         android:id="@+id/locationY"
+         android:textStyle="bold"
+         android:textSize="24sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:hint="@string/locationY" />
+     
+	 <Button
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@drawable/gradient"
+	     android:layout_marginTop="50dp"
+	     android:onClick="submitHighPriorityReport"
+	     android:text="@string/button_submitHighPriorityReport" />
+
+</LinearLayout>
+

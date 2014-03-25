@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crimebusters"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.crimebusters.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crimebusters.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.example.crimebusters" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.crimebusters" />
+        </activity>
+        <activity
+            android:name="com.example.crimebusters.Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.example.crimebusters" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.crimebusters" />
+        </activity>
+        <activity
+            android:name="com.example.crimebusters.Report"
+            android:label="@string/title_activity_report"
+            android:parentActivityName="com.example.crimebusters" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.crimebusters" />
+        </activity>
+        <activity
+            android:name="com.example.crimebusters.LowPriorityReport"
+            android:label="@string/title_activity_low_priority_report"
+            android:parentActivityName="com.example.crimebusters" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.crimebusters" />
+        </activity>
+        <activity
+            android:name="com.example.crimebusters.HighPriorityReport"
+            android:label="@string/title_activity_high_priority_report"
+            android:parentActivityName="com.example.crimebusters" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.crimebusters" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.crimebusters.HighPriorityReport$PlaceholderFragment" >
+     
+    <EditText
+         android:id="@+id/location_desc"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:hint="@string/location_desc"
+         android:textStyle="bold" />
+     
+     <EditText
+         android:id="@+id/crime_desc"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:hint="@string/crime_desc"
+         android:textStyle="bold" />
+     
+     <EditText
+         android:id="@+id/locationX"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:hint="@string/locationX"
+         android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/locationY"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+         android:hint="@string/locationY"
+         android:textStyle="bold" />
+     
+<!--      <EditText android:id="@+id/click_pictures" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:hint="@string/click_pictures" /> -->
+     
+	 <Button
+	     android:layout_width="match_parent"
+	     android:textStyle="bold"
+         android:layout_marginBottom="5dp"
+		 android:layout_height="wrap_content"
+	     android:onClick="clickPictures"
+	     android:text="@string/button_clickPictures" />
+	 
+<!-- 	 <EditText android:id="@+id/create_audio" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:hint="@string/create_audio" /> -->
+     
+	 <Button
+	     android:layout_width="match_parent"
+	     android:textStyle="bold"
+         android:layout_marginBottom="5dp"
+		 android:layout_height="wrap_content"
+	     android:onClick="createAudio"
+	     android:text="@string/button_createAudio" />
+	 
+<!-- 	 <EditText android:id="@+id/create_video" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:hint="@string/create_video" /> -->
+     
+	 <Button
+	     android:layout_width="match_parent"
+	     android:textStyle="bold"
+         android:layout_marginBottom="5dp"
+		 android:layout_height="wrap_content"
+	     android:onClick="createVideo"
+	     android:text="@string/button_createVideo" />
+     
+	 <Button
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:textStyle="bold"
+	     android:onClick="submitLowPriorityReport"
+	     android:layout_marginTop="20dp"
+	     android:background="@drawable/gradient"
+	     android:text="@string/button_submitLowPriorityReport" />
+	 
+</LinearLayout>
